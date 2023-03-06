@@ -35,6 +35,7 @@ public class Modstest {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         itemCompassWithChests = new ItemCompassWithChests();
+        itemCompassWithChests.setTextureName(MODID+":"+"item_compass_with_chests");
         GameRegistry.registerItem(itemCompassWithChests,"item_compass_with_chests",MODID);
     }
 
