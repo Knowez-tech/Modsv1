@@ -12,6 +12,8 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ChatComponentText;
@@ -75,6 +77,11 @@ public class Modstest {
     public static class ItemCompassWithChests extends Item {
 
         public static final String ICON_NAME = "compass_with_chests";
+
+        @Override
+        public boolean onLeftClickEntity(ItemStack stack, EntityPlayer player, Entity entity) {
+            return super.onLeftClickEntity(stack, player, entity);
+        }
 
         private IIcon icon;
 
