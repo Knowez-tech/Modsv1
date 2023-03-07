@@ -35,8 +35,8 @@ public class Modstest {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         itemCompassWithChests = new ItemCompassWithChests();
-        itemCompassWithChests.setTextureName(MODID+":"+"item_compass_with_chests");
-        GameRegistry.registerItem(itemCompassWithChests,"item_compass_with_chests",MODID);
+        itemCompassWithChests.setUnlocalizedName("item_Compas").setTextureName("examplemod:icwc").setCreativeTab(CreativeTabs.tabTools);
+        GameRegistry.registerItem(itemCompassWithChests,"item_Compas");
     }
 
     @Mod.EventHandler
@@ -87,7 +87,4 @@ public class Modstest {
         private IIcon icon;
 
         public ItemCompassWithChests() {
-            setUnlocalizedName(ICON_NAME);
-            setTextureName(MODID + ":" + ICON_NAME);
-            setCreativeTab(CreativeTabs.tabTools);
         }}}
