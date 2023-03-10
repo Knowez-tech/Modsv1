@@ -33,6 +33,9 @@ minecraft {
 }
 
 dependencies {
+    implementation 'info.novatec:camunda-process-instance-migrator:1.1.1'
+    implementation 'com.hortonworks.registries:registry-examples:0.9.1'
+
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
